@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SnapSaveBR — Baixar TikTok & Instagram</title>
+
+  <!-- AdSense topo (substitua ca-pub-XXXX pelo seu publisher id) -->
+  <script data-ad-client="ca-pub-XXXXXXXXXXXXXXX" async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark">
+  <header class="top">
+    <div class="brand">SnapSaveBR</div>
+    <div class="ad-top">
+      <!-- Banner topo (AdSense) -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXX"
+           data-ad-slot="TOP_BANNER_SLOT"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Salve vídeos e fotos — TikTok & Instagram</h1>
+    <p class="hint">Cole o link (post ou story público) e clique em Baixar.</p>
+
+    <div class="card">
+      <input id="url" placeholder="Cole aqui o link do TikTok/Instagram" />
+      <div class="row">
+        <button id="btn">Baixar</button>
+        <label class="switch">
+          <input id="themeToggle" type="checkbox" />
+          <span class="slider"></span>
+        </label>
+      </div>
+
+      <div id="msg" class="msg"></div>
+    </div>
+
+    <section class="how">
+      <h2>Como usar</h2>
+      <ol>
+        <li>Cole o link do post / story público do Instagram ou link do vídeo do TikTok.</li>
+        <li>Clique em <b>Baixar</b>. O arquivo será gerado e o download começará.</li>
+        <li>Se falhar: confira se o link é público e se a API configurada no backend está ativa.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="bottom">
+    <div class="ad-bottom">
+      <!-- Banner rodapé (AdSense) -->
+      <ins class="adsbygoogle"
+           style="display:block"
+           data-ad-client="ca-pub-XXXXXXXXXXXXXXX"
+           data-ad-slot="BOTTOM_BANNER_SLOT"
+           data-ad-format="auto"
+           data-full-width-responsive="true"></ins>
+    </div>
+
+    <div class="copyright">© SnapSaveBR</div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script> (adsbygoogle = window.adsbygoogle || []).push({}); </script>
+</body>
+</html>
