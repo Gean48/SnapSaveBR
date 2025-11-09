@@ -1,7 +1,7 @@
 {
   "name": "snapsavebr",
-  "version": "1.1.0",
-  "description": "Baixar vídeos do TikTok e Instagram sem APIs externas",
+  "version": "1.2.0",
+  "description": "Baixar vídeos do TikTok e Instagram com layout responsivo e modo escuro fixo.",
   "main": "server.js",
   "scripts": {
     "start": "node server.js"
