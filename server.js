@@ -8,8 +8,6 @@ const app = express();
 
 app.use(cors());
 app.use(express.json({ limit: '1mb' }));
-
-// serve frontend files from project root
 app.use(express.static(path.join(__dirname)));
 
 function baixarVideo(url, res) {
@@ -34,6 +32,16 @@ function baixarVideo(url, res) {
     });
 }
 
+app.post('/api/download', (req, res) => {
+  const { url } = req.body || {};
+  if (!url) return res.status(400).json({ error: 'URL ausente.' });
+  if (!url.includes('tiktok.com') && !url.includes('instagram.com'))
+    return res.status(400).json({ error: 'Apenas links do TikTok e Instagram são suportados.' });
+  baixarVideo(url, res);
+});
+
+const PORT = process.env.PORT || 8000;
+app.listen(PORT, () => console.log(`Servidor rodando em http://localhost:${PORT}`));
 app.post('/api/download', (req, res) => {
   const { url } = req.body || {};
   if (!url) return res.status(400).json({ error: 'URL ausente.' });
