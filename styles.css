@@ -1,3 +1,15 @@
+/* ===== ANÚNCIOS ===== */
+center {
+  margin: 4px 0 !important;
+  width: 100%;
+}
+
+ins {
+  max-width: 100%;
+  height: auto !important;
+  display: inline-block;
+}
+
 /* ===== RODAPÉ ===== */
 footer.bottom {
   display: flex;
@@ -5,11 +17,12 @@ footer.bottom {
   justify-content: center;
   align-items: center;
   gap: 4px;
-  padding: 8px 6px;
+  padding: 6px 5px;
   color: var(--muted);
   font-size: 0.8rem;
   background: rgba(255,255,255,0.03);
   border-top: 1px solid rgba(255,255,255,0.05);
+  margin-top: 8px;
 }
 
 footer.bottom p {
@@ -66,10 +79,16 @@ footer.bottom p {
     font-size: 0.8rem;
   }
 
+  /* 🔧 Reduz ainda mais o rodapé e os anúncios no celular */
+  center {
+    margin: 2px 0 !important;
+  }
+
   footer.bottom {
     gap: 2px;
-    padding: 6px 4px;
+    padding: 5px 4px;
     font-size: 0.75rem;
+    margin-top: 4px;
   }
 
   .tg-link {
